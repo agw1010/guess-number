@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>guess number</title>
+    <title>Number guessing game</title>
 </head>
 <body>
-    <h1>숫자맞추기</h1>
-    <form id="guess">
-        <input type="text" placeholder="숫자를 입력하세요">
-    </form>
-    <span id="tell"></span>
-    <script src="app.js"></script>
+    <h1>Number guessing game</h1>
+    <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or less. We'll tell you if your guess was too high or too low.</p>
+    <div class="form"> <label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField"> <input type="submit" value="Submit guess" class="guessSubmit"> </div>
+    <div class="resultParas">
+        <p class="guesses"></p>
+        <p class="lastResult"></p>
+        <p class="lowOrHi"></p>
+    </div>
 </body>
+<script src="app.js"></script>
 </html>
